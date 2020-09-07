@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Павел Корчагин](https://up.htmlacademy.ru/htmlcss/29/user/1249721).
-* Наставник: `Ирина Шашева`.
+* Наставник: [Ирина Шашева](https://htmlacademy.ru/profile/loyso).
 
 ---
 
