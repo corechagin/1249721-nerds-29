@@ -1,0 +1,152 @@
+/* Varibles */
+
+:root {
+  --basic-light-green: #00CA74;
+  --basic-dark-green: #00BC6C;
+  --basic-darker-green: #00AA62;
+
+  --basic-light-red: #FB565A;
+  --basic-dark-red: #E74246;
+  --basic-darker-red: #D7373B;
+
+  --basic-light-yellow: #EFC84A;
+  --basic-dark-yellow: #EAB534;
+  --basic-darker-yellow: #E5A722;
+
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+
+  --basic-light-grey: #EEEEEE;
+  --basic-dark-grey: #DFDFDF;
+  --basic-darker-grey: #D5D5D5;
+}
+
+/* Global */
+
+body {
+  min-width: 1160px;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation,
+.services-title,
+.feature-caption,
+.features-list-title,
+.features-table-title,
+.contacts-title,
+.button {
+  text-transform: uppercase;
+}
+
+.site-navigation,
+.services-list,
+.work-performe-list {
+  list-style: none;
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--basic-light-grey);
+}
+
+.site-cart {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.main-header-logo {
+  text-transform: none;
+}
+
+/* User navigation */
+
+.site-navigation a,
+.site-cart a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-cart a:hover,
+.site-cart a:focus {
+  color: var(--basic-light-red);
+}
+
+/* Slider */
+
+.slider {
+  background-color: var(--basic-light-grey);
+}
+
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Services */
+
+.services-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features-caption {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.features-cell {
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.features-cell-header {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
+/* Contacts */
+
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/* Footer */
+
+.friend-discont-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.friend-discont-description {
+  font-size: 16px;
+  line-height: 22px;
+}
