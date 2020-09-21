@@ -1,24 +1,24 @@
 /* Varibles */
 
 :root {
-  --basic-light-green: #00CA74;
-  --basic-dark-green: #00BC6C;
-  --basic-darker-green: #00AA62;
+  --light-green: #00CA74;
+  --dark-green: #00BC6C;
+  --darker-green: #00AA62;
 
-  --basic-light-red: #FB565A;
-  --basic-dark-red: #E74246;
-  --basic-darker-red: #D7373B;
+  --light-red: #FB565A;
+  --dark-red: #E74246;
+  --darker-red: #D7373B;
 
-  --basic-light-yellow: #EFC84A;
-  --basic-dark-yellow: #EAB534;
-  --basic-darker-yellow: #E5A722;
+  --light-yellow: #EFC84A;
+  --dark-yellow: #EAB534;
+  --darker-yellow: #E5A722;
 
-  --basic-black: #000000;
-  --basic-white: #ffffff;
+  --black: #000000;
+  --white: #ffffff;
 
-  --basic-light-grey: #EEEEEE;
-  --basic-dark-grey: #DFDFDF;
-  --basic-darker-grey: #D5D5D5;
+  --light-grey: #EEEEEE;
+  --dark-grey: #DFDFDF;
+  --darker-grey: #D5D5D5;
 }
 
 /* Global */
@@ -27,11 +27,11 @@ body {
   min-width: 1160px;
   padding: 0;
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--basic-black);
+  color: var(--black);
 }
 
 a {
@@ -62,15 +62,8 @@ img {
 
 /* Main navigation */
 
-.main-navigation {
-  font-size: 16px;
-  line-height: 30px;
-  background-color: var(--basic-light-grey);
-}
-
-.site-cart {
-  font-size: 16px;
-  line-height: 30px;
+.main-header {
+  background-color: var(--light-grey);
 }
 
 .main-header-logo {
@@ -80,31 +73,34 @@ img {
 /* User navigation */
 
 .site-navigation a,
-.site-cart a {
-  color: var(--basic-black);
+.site-basket a {
+  color: var(--black);
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.site-cart a:hover,
-.site-cart a:focus {
-  color: var(--basic-light-red);
+.site-basket a:hover,
+.site-basket a:focus {
+  color: var(--light-red);
+}
+
+.site-navigation a:active,
+.site-basket a:active {
+  color: var(--black);
+  opacity: 0.3;
 }
 
 /* Slider */
 
 .slider {
-  background-color: var(--basic-light-grey);
+  background-color: var(--light-grey);
 }
 
 .slider-title {
   font-size: 55px;
   line-height: 55px;
-}
-
-.slider-description {
-  font-size: 16px;
-  line-height: 24px;
 }
 
 /* Services */
@@ -119,15 +115,17 @@ img {
   line-height: 45px;
 }
 
-.features-cell {
+.features-table-row {
   font-size: 45px;
   line-height: 64px;
+  font-weight: 700;
 }
 
-.features-cell-header {
+.features-table-row-header {
   font-size: 16px;
   line-height: 18px;
   text-align: left;
+  font-weight: 400;
 }
 
 /* Contacts */
@@ -135,13 +133,13 @@ img {
 .contacts-title {
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* Footer */
 
 .friend-discont-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
 }
@@ -149,4 +147,66 @@ img {
 .friend-discont-description {
   font-size: 16px;
   line-height: 22px;
+}
+
+/* Global Buttons */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.slider-button,
+.contacts-button,
+.left-button {
+  background-color: var(--light-red);
+}
+
+.slider-button:hover,
+.slider-button:focus,
+.contacts-button:hover,
+.contacts-button:focus,
+.left-button:hover,
+.left-button:focus {
+  background-color: var(--dark-red);
+}
+
+.slider-button:active,
+.contacts-button:active,
+.left-button:active {
+  background-color: var(--darker-red);
+  color: rgba(255,255,255, 0.3);
+}
+
+/* Services-buttons */
+
+.center-button:hover,
+.center-button:focus {
+  background-color: var(--dark-green);
+}
+
+.center-button:active {
+  background-color: var(--darker-green);
+  color: rgba(255,255,255, 0.3);
+}
+
+.center-button {
+  background-color: var(--light-green);
+}
+
+.right-button:hover,
+.right-button:focus {
+  background-color: var(--dark-yellow);
+}
+
+.right-button:active {
+  background-color: var(--darker-yellow);
+  color: rgba(255,255,255, 0.3);
+}
+.right-button {
+  background-color: var(--light-yellow);
 }
