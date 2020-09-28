@@ -162,7 +162,8 @@ img {
 
 .slider-button,
 .contacts-button,
-.left-button {
+.left-button,
+.pattern-button {
   background-color: var(--light-red);
 }
 
@@ -171,13 +172,16 @@ img {
 .contacts-button:hover,
 .contacts-button:focus,
 .left-button:hover,
-.left-button:focus {
+.left-button:focus,
+.pattern-button:hover,
+.pattern-button:focus {
   background-color: var(--dark-red);
 }
 
 .slider-button:active,
 .contacts-button:active,
-.left-button:active {
+.left-button:active,
+.pattern-button {
   background-color: var(--darker-red);
   color: rgba(255,255,255, 0.3);
 }
@@ -209,4 +213,57 @@ img {
 }
 .right-button {
   background-color: var(--light-yellow);
+}
+
+/* Catalog-styles */
+
+.shop-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.filter-description,
+.pattern-description,
+.pattern-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+.filter-description,
+.pattern-description,
+.pattern-filter-item {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.pattern-item {
+  list-style: none;
+}
+
+.pattern-filter-item,
+.pattern-item-description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.pattern-item-title a {
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.pattern-item-title a:hover,
+.pattern-item-title a:focus {
+  color: var(--light-red);
+}
+
+.pattern-item-title a:active {
+  color: rgba(255,255,255, 0.3);
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-link {
+  background-color: var(--light-grey);
 }
