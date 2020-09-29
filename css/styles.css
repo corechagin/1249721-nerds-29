@@ -149,7 +149,7 @@ img {
   line-height: 22px;
 }
 
-/* Global Buttons */
+/* Global buttons */
 
 .button {
   font: inherit;
@@ -181,9 +181,10 @@ img {
 .slider-button:active,
 .contacts-button:active,
 .left-button:active,
-.pattern-button {
+.pattern-button:active {
   background-color: var(--darker-red);
-  color: rgba(255,255,255, 0.3);
+  color: var(--white);
+  opacity: 0.3;
 }
 
 /* Services-buttons */
@@ -195,7 +196,8 @@ img {
 
 .center-button:active {
   background-color: var(--darker-green);
-  color: rgba(255,255,255, 0.3);
+  color: var(--white);
+  opacity: 0.3;
 }
 
 .center-button {
@@ -209,7 +211,8 @@ img {
 
 .right-button:active {
   background-color: var(--darker-yellow);
-  color: rgba(255,255,255, 0.3);
+  color: var(--white);
+  opacity: 0.3;
 }
 .right-button {
   background-color: var(--light-yellow);
@@ -257,13 +260,63 @@ img {
 }
 
 .pattern-item-title a:active {
-  color: rgba(255,255,255, 0.3);
+  color: var(--black);
+  opacity: 0.3;
 }
 
 .pagination {
   list-style: none;
 }
 
-.pagination-link {
+.current-position a,
+.current-position a:focus,
+.current-position a:hover {
+  color: var(--black);
+}
+
+.current-position a:active {
+  color: var(--black);
+  opacity: 1;
+}
+
+.pattern-filter-item a {
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.pattern-filter-item a:focus,
+.pattern-filter-item a:hover {
+  color: var(--black);
+  opacity: 0.6;
+}
+
+.pattern-filter-item a:active {
+  color: var(--black);
+}
+
+.current a{
+  color: var(--black);
+  opacity: 1;
+}
+
+.pagination-link-current{
+  border: 3px solid var(--dark-grey);
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: var(--black);
+}
+
+.pagination-link{
   background-color: var(--light-grey);
+}
+
+.pagination-link:focus,
+.pagination-link:hover {
+  background-color: var(--dark-grey);
+}
+
+.pagination-link:active {
+  background-color: var(--darker-grey);
+  color: var(--black);
+  opacity: 0.3;
 }
