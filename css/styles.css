@@ -19,6 +19,12 @@
   --light-grey: #EEEEEE;
   --dark-grey: #DFDFDF;
   --darker-grey: #D5D5D5;
+
+/* Opacity colors */
+
+  --opacity-light-black: rgba(0, 0, 0, 0.3);
+  --opacity-black: rgba(0, 0, 0, 0.6);
+  --opacity-white: rgba(255, 255, 255, 0.3);
 }
 
 /* Global */
@@ -88,8 +94,7 @@ img {
 
 .site-navigation a:active,
 .site-basket a:active {
-  color: var(--black);
-  opacity: 0.3;
+  color: var(--opacity-light-black);
 }
 
 /* Slider */
@@ -183,8 +188,7 @@ img {
 .left-button:active,
 .pattern-button:active {
   background-color: var(--darker-red);
-  color: var(--white);
-  opacity: 0.3;
+  color: var(--opacity-white);
 }
 
 /* Services-buttons */
@@ -196,8 +200,7 @@ img {
 
 .center-button:active {
   background-color: var(--darker-green);
-  color: var(--white);
-  opacity: 0.3;
+  color: var(--opacity-white);
 }
 
 .center-button {
@@ -211,8 +214,7 @@ img {
 
 .right-button:active {
   background-color: var(--darker-yellow);
-  color: var(--white);
-  opacity: 0.3;
+  color: var(--opacity-white);
 }
 .right-button {
   background-color: var(--light-yellow);
@@ -260,8 +262,7 @@ img {
 }
 
 .pattern-item-title a:active {
-  color: var(--black);
-  opacity: 0.3;
+  color: var(--opacity-light-black);
 }
 
 .pagination {
@@ -276,27 +277,24 @@ img {
 
 .current-position a:active {
   color: var(--black);
-  opacity: 1;
 }
 
 .pattern-filter-item a {
-  color: var(--black);
-  opacity: 0.3;
+  color: var(--opacity-light-black);
 }
 
 .pattern-filter-item a:focus,
 .pattern-filter-item a:hover {
-  color: var(--black);
-  opacity: 0.6;
+  color: var(--opacity-black);
 }
 
 .pattern-filter-item a:active {
   color: var(--black);
 }
-
-.current a{
+.current a:focus,
+.current a:hover,
+.current a {
   color: var(--black);
-  opacity: 1;
 }
 
 .pagination-link-current{
@@ -307,6 +305,7 @@ img {
 }
 
 .pagination-link{
+  color: var(--black);
   background-color: var(--light-grey);
 }
 
@@ -317,6 +316,5 @@ img {
 
 .pagination-link:active {
   background-color: var(--darker-grey);
-  color: var(--black);
-  opacity: 0.3;
+  color: var(--opacity-light-black);
 }
