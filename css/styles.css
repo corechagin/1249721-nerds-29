@@ -65,11 +65,46 @@ img {
   list-style: none;
 }
 
+/* Grid */
+
+.page {
+ height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Hidden titles */
+.hidden-title { /*Убрать 1 потом*/
+  display: none;
+}
+
 
 /* Main navigation */
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.inner-page .main-navigation-wrapper {
+  grid-template-columns: 170px 1fr min-content;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+}
+
+.main-navigation {
+  display: grid;
+}
 
 .main-header {
   background-color: var(--light-grey);
+  margin-bottom: 50px;
 }
 
 .main-header-logo {
@@ -77,6 +112,11 @@ img {
 }
 
 /* User navigation */
+.site-navigation {
+  margin: 0;
+  padding: 0;
+}
+
 
 .site-navigation a,
 .site-basket a {
@@ -110,9 +150,38 @@ img {
 
 /* Services */
 
+.services {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item{
+  text-align: left;
+}
+
 .services-title {
   font-size: 24px;
   line-height: 30px;
+}
+
+/* Features */
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 150px;
+  padding-top: 40px;
+  padding-bottom: 73px;
 }
 
 .features-caption {
@@ -133,6 +202,25 @@ img {
   font-weight: 400;
 }
 
+.features-table-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* Works */
+
+.work-performe-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.work-performe-item {
+  text-align: center;
+}
 /* Contacts */
 
 .contacts-title {
@@ -317,4 +405,18 @@ img {
 .pagination-link:active {
   background-color: var(--darker-grey);
   color: var(--opacity-light-black);
+}
+
+.page-footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--darker-grey) ;
+}
+
+.social-list {
+  width: 266px;
+}
+
+.friend-wrapper {
+  width: 660px;
 }
