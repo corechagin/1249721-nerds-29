@@ -69,6 +69,8 @@ img {
 
 .page {
  height: 100%;
+ width: 1160px;
+ margin: 0 auto;
 }
 
 .page-body {
@@ -80,31 +82,29 @@ img {
 
 /* Hidden titles */
 .hidden-title { /*Убрать 1 потом*/
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 
 /* Main navigation */
 .main-navigation-wrapper {
   display: grid;
-  grid-template-columns: 1fr min-content;
-}
-
-.inner-page .main-navigation-wrapper {
   grid-template-columns: 170px 1fr min-content;
 }
 
-.inner-page .main-header-logo {
-  order: 0;
-}
-
-.main-navigation {
+.main-navigation a{
   display: grid;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .main-header {
   background-color: var(--light-grey);
-  margin-bottom: 50px;
 }
 
 .main-header-logo {
@@ -115,14 +115,6 @@ img {
 .site-navigation {
   margin: 0;
   padding: 0;
-}
-
-
-.site-navigation a,
-.site-basket a {
-  color: var(--black);
-  font-size: 16px;
-  line-height: 30px;
 }
 
 .site-navigation a:hover,
@@ -158,14 +150,9 @@ img {
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  column-gap: 100px;
+  column-gap: 80px;
   margin: 0;
   padding: 0;
-}
-
-.services-item{
-  text-align: left;
 }
 
 .services-title {
@@ -177,8 +164,7 @@ img {
 
 .features {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  grid-template-columns: 2fr 1fr;
   gap: 150px;
   padding-top: 40px;
   padding-bottom: 73px;
@@ -410,13 +396,6 @@ img {
 .page-footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background-color: var(--darker-grey) ;
+  gap: 20px;
 }
 
-.social-list {
-  width: 266px;
-}
-
-.friend-wrapper {
-  width: 660px;
-}
