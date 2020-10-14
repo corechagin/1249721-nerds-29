@@ -68,9 +68,12 @@ img {
 /* Grid */
 
 .page {
- height: 100%;
- width: 1160px;
- margin: 0 auto;
+  height: 100%;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .page-body {
@@ -81,7 +84,8 @@ img {
 }
 
 /* Hidden titles */
-.hidden-title { /*Убрать 1 потом*/
+
+.visually-hidden { /*Убрать 1 потом*/
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -91,12 +95,13 @@ img {
 
 
 /* Main navigation */
-.main-navigation-wrapper {
+
+.main-navigation{
   display: grid;
   grid-template-columns: 170px 1fr min-content;
 }
 
-.main-navigation a{
+.main-navigation a {
   display: grid;
   color: var(--black);
   font-size: 16px;
@@ -112,6 +117,7 @@ img {
 }
 
 /* User navigation */
+
 .site-navigation {
   margin: 0;
   padding: 0;
@@ -208,6 +214,10 @@ img {
   text-align: center;
 }
 /* Contacts */
+
+.contacts-map {
+  background-repeat: repeat-x;
+}
 
 .contacts-title {
   font-size: 18px;

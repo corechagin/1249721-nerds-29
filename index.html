@@ -12,34 +12,34 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <div class="main-navigation-wrapper">
-            <a class="main-header-logo">
-              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-            </a>
-            <ul class="site-navigation">
-              <li class="site-navigation-item"><a href="#">Студия</a></li>
-              <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-              <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
-              <li class="site-navigation-item"><a href="#">Контакты</a></li>
-            </ul>
-            <a class="basket" href="#">Корзина</a>
-          </div>
+          <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="#">Студия</a></li>
+            <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+            <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+            <li class="site-navigation-item"><a href="#">Контакты</a></li>
+          </ul>
+          <a class="basket" href="#">Корзина</a>
         </nav>
       </div>
     </header>
 
     <main class="center">
-      <h1 class="hidden-title">Дизайн-студия Nerds</h1>
+      <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
       <section class="slider">
-        <img src="#" alt="">
-        <h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
-        <p class="slider-description">Математически выверенный дизайн
-          для вашего сайта или мобильного приложения.</p>
-        <a class="button slider-button" href="#">Узнать больше</a>
+        <div class="container">
+          <img src="#" alt="">
+          <h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
+          <p class="slider-description">Математически выверенный дизайн
+            для вашего сайта или мобильного приложения.</p>
+          <a class="button slider-button" href="#">Узнать больше</a>
+        </div>
       </section>
 
-      <section class="services">
-        <h2 class="hidden-title">Услуги</h2>
+      <section class="services container">
+        <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="services-item">
             <img src="img/web.jpg"  width="300" height="146" alt="Web-sites">
@@ -65,8 +65,8 @@
         </ul>
       </section>
 
-      <section class="features">
-        <h2 class="hidden-title">Преемущества</h2>
+      <section class="features container">
+        <h2 class="visually-hidden">Преемущества</h2>
         <div class="features-wrapper-first">
           <p class="features-caption">Мы — маленькая, но гордая
             дизайн-студия из Краснодара.</p>
@@ -100,8 +100,8 @@
         </div>
       </section>
 
-      <section class="work-performed">
-        <h2 class="hidden-title">Выполненные работы</h2>
+      <section class="work-performed container">
+        <h2 class="visually-hidden">Выполненные работы</h2>
         <ul class="work-performe-list">
           <li class="work-performe-item">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -127,19 +127,21 @@
       </section>
 
       <section class="contacts">
-        <h2 class="hidden-title">Где нас найти</h2>
-        <img src="img/map.jpg" class="contacts-map" alt="Map">
-        <p class="contacts-title">Nёrds Design Studio</p>
-        <p>191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел.<a class="contacts-phone" href="tel:+7812757575">+7(812)275-75-75</a></p>
-        <button type="button" class="button contacts-button">Напишите нам</button>
+        <h2 class="visually-hidden">Где нас найти</h2>
+        <img src="img/map.jpg" width="100%" class="contacts-map" alt="Map">
+        <div class="container">
+          <p class="contacts-title">Nёrds Design Studio</p>
+          <p>191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел.<a class="contacts-phone" href="tel:+7812757575">+7(812)275-75-75</a></p>
+          <button type="button" class="button contacts-button">Напишите нам</button>
+        </div>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <section class="footer-social">
-        <h2 class="hidden-title">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li>
             <a class="social-button" href="#">Вконтакте</a>
