@@ -10,106 +10,112 @@
 
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="#">Студия</a></li>
-          <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-          <li class="site-navigation-item current-position"><a>Магазин</a></li>
-          <li class="site-navigation-item"><a href="#">Контакты</a></li>
-        </ul>
-        <div class="site-basket">
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="#">Студия</a></li>
+            <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+            <li class="site-navigation-item current-position"><a>Магазин</a></li>
+            <li class="site-navigation-item"><a href="#">Контакты</a></li>
+          </ul>
           <a class="basket" href="#">Корзина</a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="page-catalog">
       <h1 class="shop-title">Магазин готовых шаблонов</h1>
-      <section class="filter">
-        <h2 class="hidden-title">Фильтр товаров</h2>
-        <p class="filter-description">Стоимость:</p>
-        <!--Здесь будет фильтр товаров-->
-      </section>
+        <div class="wrapper container">
+          <section class="filter">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <p class="filter-description container">Стоимость:</p>
+            <!--Здесь будет фильтр товаров-->
+          </section>
 
-      <section class="pattern">
-        <h2 class="hidden-title">Список готовых шаблонов</h2>
-        <p class="pattern-description">Сортировать:</p>
-        <ul class="pattern-filter-list">
-          <li class="pattern-filter-item current"><a>По цене</a></li>
-          <li class="pattern-filter-item"><a href="#">По типу</a></li>
-          <li class="pattern-filter-item"><a href="#">По названию</a></li>
-          <li class="pattern-filter-item current"><a>Стрелочка вверх</a></li><!--Стилизую потом-->
-          <li class="pattern-filter-item"><a href="#">Стрелочка вниз</a></li><!--Стилизую потом-->
-        </ul>
-        <ul class="pattern-list">
-          <li class="pattern-item">
-            <img src="img/sedona.jpg" width="358" height="578" alt="Sedona">
-            <h3 class="pattern-item-title"><a href="#">Sedona</a></h3>
-            <p class="pattern-item-description">Информационный сайт для туристов</p>
-            <button type="button" class="button pattern-button">9900 ₽</button>
-          </li>
-          <li class="pattern-item">
-            <img src="img/pink.jpg" width="358" height="578" alt="Pink App">
-            <h3 class="pattern-item-title"><a href="#">Pink App</a></h3>
-            <p class="pattern-item-description">Продуктовый лендинг для iOS и Android</p>
-            <button type="button" class="button pattern-button">9900 ₽</button>
-          </li>
-          <li class="pattern-item">
-            <img src="img/borodinski.jpg" width="358" height="578" alt="Barbershop">
-            <h3 class="pattern-item-title"><a href="#">Barbershop</a></h3>
-            <p class="pattern-item-description">Сайт салона красоты. Для мужчин, да.</p>
-            <button type="button" class="button pattern-button">9900 ₽</button>
-          </li>
-          <li class="pattern-item">
-            <img src="img/mishka.jpg" width="358" height="578" alt="Mishka">
-            <h3 class="pattern-item-title"><a href="#">Mishka</a></h3>
-            <p class="pattern-item-description">Интернет-магазин вязаных игрушек</p>
-            <button type="button" class="button pattern-button">9900 ₽</button>
-          </li>
-          <li class="pattern-item">
-            <img src="img/aplus.jpg" width="358" height="578" alt="A Plus">
-            <h3 class="pattern-item-title"><a href="#">A Plus</a></h3>
-            <p class="pattern-item-description">Лендинг курсов повышения квалификации</p>
-            <button type="button" class="button pattern-button">9900 ₽</button>
-          </li>
-          <li class="pattern-item">
-            <img src="img/kvast.jpg" width="358" height="578" alt="Кваст">
-            <h3 class="pattern-item-title"><a href="#">Кваст</a></h3>
-            <p class="pattern-item-description">Промо-сайт производителя крафтового кваса</p>
-            <button type="button" class="button pattern-button">9900 ₽</button>
-          </li>
-        </ul>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">Следующая</a>
-          </li>
-        </ul>
-      </section>
+          <section class="pattern">
+            <h2 class="visually-hidden">Список готовых шаблонов</h2>
+            <div class="pattern-filter-wrapper">
+              <p class="pattern-description">Сортировать:</p>
+              <ul class="pattern-filter-list">
+                <li class="pattern-filter-item current"><a>По цене</a></li>
+                <li class="pattern-filter-item"><a href="#">По типу</a></li>
+                <li class="pattern-filter-item"><a href="#">По названию</a></li>
+                <li class="pattern-filter-item current"><a>Стрелочка вверх</a></li><!--Стилизую потом-->
+                <li class="pattern-filter-item"><a href="#">Стрелочка вниз</a></li><!--Стилизую потом-->
+              </ul>
+            </div>
+            <ul class="pattern-list">
+              <li class="pattern-item">
+                <img src="img/sedona.jpg" width="358" height="578" alt="Sedona">
+                <h3 class="pattern-item-title"><a href="#">Sedona</a></h3>
+                <p class="pattern-item-description">Информационный сайт для туристов</p>
+                <button type="button" class="button pattern-button">9900 ₽</button>
+              </li>
+              <li class="pattern-item">
+                <img src="img/pink.jpg" width="358" height="578" alt="Pink App">
+                <h3 class="pattern-item-title"><a href="#">Pink App</a></h3>
+                <p class="pattern-item-description">Продуктовый лендинг для iOS и Android</p>
+                <button type="button" class="button pattern-button">9900 ₽</button>
+              </li>
+              <li class="pattern-item">
+                <img src="img/borodinski.jpg" width="358" height="578" alt="Barbershop">
+                <h3 class="pattern-item-title"><a href="#">Barbershop</a></h3>
+                <p class="pattern-item-description">Сайт салона красоты. Для мужчин, да.</p>
+                <button type="button" class="button pattern-button">9900 ₽</button>
+              </li>
+              <li class="pattern-item">
+                <img src="img/mishka.jpg" width="358" height="578" alt="Mishka">
+                <h3 class="pattern-item-title"><a href="#">Mishka</a></h3>
+                <p class="pattern-item-description">Интернет-магазин вязаных игрушек</p>
+                <button type="button" class="button pattern-button">9900 ₽</button>
+              </li>
+              <li class="pattern-item">
+                <img src="img/aplus.jpg" width="358" height="578" alt="A Plus">
+                <h3 class="pattern-item-title"><a href="#">A Plus</a></h3>
+                <p class="pattern-item-description">Лендинг курсов повышения квалификации</p>
+                <button type="button" class="button pattern-button">9900 ₽</button>
+              </li>
+              <li class="pattern-item">
+                <img src="img/kvast.jpg" width="358" height="578" alt="Кваст">
+                <h3 class="pattern-item-title"><a href="#">Кваст</a></h3>
+                <p class="pattern-item-description">Промо-сайт производителя крафтового кваса</p>
+                <button type="button" class="button pattern-button">9900 ₽</button>
+              </li>
+            </ul>
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">Следующая</a>
+              </li>
+            </ul>
+          </section>
+        </div>
     </main>
 
     <section class="contacts">
-      <h2 class="hidden-title">Где нас найти</h2>
-      <img src="img/map.jpg" class="contacts-map" alt="Map">
-      <p class="contacts-title">Nёrds Design Studio</p>
-      <p>191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел.<a class="contacts-phone" href="tel:+7812757575">+7(812)275-75-75</a></p>
-      <button type="button" class="button contacts-button">Напишите нам</button>
+      <h2 class="visually-hidden">Где нас найти</h2>
+      <img src="img/map.jpg" width="100%" class="contacts-map" alt="Map">
+      <div class="container">
+        <p class="contacts-title">Nёrds Design Studio</p>
+        <p>191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел.<a class="contacts-phone" href="tel:+7812757575">+7(812)275-75-75</a></p>
+        <button type="button" class="button contacts-button">Напишите нам</button>
+      </div>
     </section>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <section class="footer-social">
         <h2>Социальные сети</h2>
         <ul>
@@ -125,8 +131,10 @@
         </ul>
       </section>
 
-      <h3 class="friend-discont-title">Давайте дружить, это выгодно!</h3>
-      <p class="friend-discont-description">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="friend-wrapper">
+        <h3 class="friend-discont-title">Давайте дружить, это выгодно!</h3>
+        <p class="friend-discont-description">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
 
     </footer>
   </body>

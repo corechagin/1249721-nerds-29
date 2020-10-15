@@ -125,13 +125,13 @@ img {
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.site-basket a:hover,
-.site-basket a:focus {
+.basket:hover,
+.basket:focus {
   color: var(--light-red);
 }
 
 .site-navigation a:active,
-.site-basket a:active {
+.basket:active {
   color: var(--opacity-light-black);
 }
 
@@ -309,6 +309,9 @@ img {
 .shop-title {
   font-size: 55px;
   line-height: 55px;
+  background-color: var(--light-grey);
+  text-align: center;
+  margin: 0;
 }
 
 .filter-description,
@@ -329,6 +332,17 @@ img {
   list-style: none;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 400px 2fr;
+  align-content: start;
+}
+
+.pattern-filter-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .pattern-filter-item,
 .pattern-item-description {
   font-size: 14px;
@@ -338,6 +352,14 @@ img {
 .pattern-item-title a {
   color: var(--black);
   text-transform: uppercase;
+}
+
+.pattern-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .pattern-item-title a:hover,
@@ -350,7 +372,12 @@ img {
 }
 
 .pagination {
+  display: grid;
   list-style: none;
+  grid-template-columns: 50px 50px 50px 260px;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
 }
 
 .current-position a,
