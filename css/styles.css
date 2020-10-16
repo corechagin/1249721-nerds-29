@@ -334,7 +334,7 @@ img {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 400px 2fr;
+  grid-template-columns: 1fr 2fr;
   align-content: start;
 }
 
@@ -354,9 +354,10 @@ img {
   text-transform: uppercase;
 }
 
-.pattern-list{
+.pattern-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px 42px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -372,12 +373,7 @@ img {
 }
 
 .pagination {
-  display: grid;
   list-style: none;
-  grid-template-columns: 50px 50px 50px 260px;
-  gap: 11px;
-  margin: 0;
-  padding: 0;
 }
 
 .current-position a,
