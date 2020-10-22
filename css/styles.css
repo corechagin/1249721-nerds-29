@@ -113,12 +113,21 @@ img {
 }
 
 .main-header-logo {
+  padding-top: 49px;
   text-transform: none;
 }
 
 /* User navigation */
+.site-navigation a,
+.basket {
+  padding-top: 75px;
+  padding-right: 45px;
+}
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -138,19 +147,31 @@ img {
 /* Slider */
 
 .slider {
+  margin: 0;
+  padding-bottom: 80px;
   background-color: var(--light-grey);
 }
 
 .slider-title {
   font-size: 55px;
   line-height: 55px;
+  padding: 65px 0 25px 0;
+  margin: 0;
+}
+
+.slider-description {
+  margin: 0;
+  padding: 0 0 38px 0;
+}
+
+.slider-button a {
+  padding-bottom: 80px;
 }
 
 /* Services */
 
 .services {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 80px 0;
 }
 
 .services-list {
@@ -171,14 +192,40 @@ img {
 .features {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  border-bottom: 2px solid var(--light-grey);
+  border-top: 2px solid var(--light-grey);
   gap: 150px;
-  padding-top: 40px;
-  padding-bottom: 73px;
+  padding: 39px 0 73px 0;
+}
+
+.features-description {
+  margin: 0 0 40px 0;
+}
+
+.features-list {
+  margin: 0;
+}
+
+.features-list-title {
+  margin: 0 0 23px 0;
+}
+
+.features-item {
+  margin: 0 0 23px 0;
+}
+
+.features-item:last-child {
+  margin: 0;
+}
+
+.features-logo {
+  margin: 0 0 37px 0;
 }
 
 .features-caption {
   font-size: 45px;
   line-height: 45px;
+  margin: 34px 0 32px 0;
 }
 
 .features-table-row {
@@ -198,6 +245,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0 0 31px 0;
 }
 
 /* Works */
@@ -206,8 +254,12 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  margin: 0;
+  margin: 46px 0 44px 0;
   padding: 0;
+}
+
+.work-performed {
+  border-bottom: 2px solid var(--light-grey);
 }
 
 .work-performe-item {
@@ -216,6 +268,7 @@ img {
 /* Contacts */
 
 .contacts-map {
+  margin-top: 80px;
   background-repeat: repeat-x;
 }
 
@@ -231,11 +284,13 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
 }
 
 .friend-discont-description {
   font-size: 16px;
   line-height: 22px;
+  margin: 0;
 }
 
 /* Global buttons */
