@@ -109,25 +109,25 @@ img {
 }
 
 .main-header {
+  padding-top: 49px;
   background-color: var(--light-grey);
 }
 
 .main-header-logo {
-  padding-top: 49px;
   text-transform: none;
 }
 
 /* User navigation */
-.site-navigation a,
-.basket {
-  padding-top: 75px;
-  padding-right: 45px;
+.site-navigation a {
+  margin-right: 45px;
 }
 
-.site-navigation {
+.site-navigation,
+.basket {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   margin: 0;
   padding: 0;
 }
@@ -148,24 +148,20 @@ img {
 
 .slider {
   margin: 0;
-  padding-bottom: 80px;
+  padding: 78px 0 80px 0;
   background-color: var(--light-grey);
 }
 
 .slider-title {
   font-size: 55px;
   line-height: 55px;
-  padding: 65px 0 25px 0;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 25px 0;
 }
 
 .slider-description {
-  margin: 0;
-  padding: 0 0 38px 0;
-}
-
-.slider-button a {
-  padding-bottom: 80px;
+  padding: 0;
+  margin: 0 0 38px 0;
 }
 
 /* Services */
@@ -254,12 +250,13 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  margin: 46px 0 44px 0;
-  padding: 0;
+  margin: 0;
+  padding: 46px 0 44px 0;
+  border-bottom: 2px solid var(--light-grey);
 }
 
 .work-performed {
-  border-bottom: 2px solid var(--light-grey);
+  padding-bottom: 80px;
 }
 
 .work-performe-item {
@@ -268,7 +265,6 @@ img {
 /* Contacts */
 
 .contacts-map {
-  margin-top: 80px;
   background-repeat: repeat-x;
 }
 
@@ -279,6 +275,16 @@ img {
 }
 
 /* Footer */
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.social-button {
+  margin-right: 9px;
+}
 
 .friend-discont-title {
   font-weight: 700;
