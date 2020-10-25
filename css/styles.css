@@ -372,6 +372,7 @@ img {
   line-height: 55px;
   background-color: var(--light-grey);
   text-align: center;
+  padding: 78px 0 108px 0;
   margin: 0;
 }
 
@@ -389,6 +390,14 @@ img {
   list-style: none;
 }
 
+.filter {
+  padding: 55px 0 0 0;
+}
+
+.filter-description {
+  margin: 0;
+}
+
 .pattern-item {
   list-style: none;
 }
@@ -399,9 +408,25 @@ img {
   align-content: start;
 }
 
+.pattern-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+
+.pattern-filter-item {
+  margin-right: 25px;
+}
+
+.pattern-description {
+  margin: 0;
+}
+
 .pattern-filter-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 55px 0 48px 0;
 }
 
 .pattern-filter-item,
@@ -413,6 +438,14 @@ img {
 .pattern-item-title a {
   color: var(--black);
   text-transform: uppercase;
+}
+
+.pattern-item-title {
+  margin: 0 0 12px 0;
+}
+
+.pattern-item-description {
+  margin: 0 0 32px 0;
 }
 
 .pattern-list {
@@ -434,7 +467,14 @@ img {
 }
 
 .pagination {
+  display: flex;
   list-style: none;
+  padding: 55px 0 60px 0;
+  margin: 0;
+}
+
+.pagination-item {
+  margin-right: 11px ;
 }
 
 .current-position a,
