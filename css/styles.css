@@ -132,6 +132,22 @@ img {
   padding: 0;
 }
 
+.basket::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 100px;
+  bottom: 27px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.basket {
+  position: relative;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus,
 .basket:hover,
@@ -173,7 +189,7 @@ img {
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 80px;
+  column-gap: 50px;
   margin: 0;
   padding: 0;
 }
@@ -181,6 +197,11 @@ img {
 .services-title {
   font-size: 24px;
   line-height: 30px;
+  margin: 25px 0 16px 0;
+}
+
+.services-description {
+  margin: 0 0 47px 0;
 }
 
 /* Features */
@@ -260,6 +281,14 @@ img {
 }
 
 .work-performe-item {
+  background-image:url("../img/grey-line.png");
+  background-position: right, 0 0;
+  background-repeat: no-repeat, repeat;
+  text-align: center;
+}
+
+.work-performe-item:last-child {
+  background-image: none;
   text-align: center;
 }
 /* Contacts */
@@ -280,6 +309,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin: 0;
+  padding: 0
 }
 
 .social-button {
@@ -308,6 +339,7 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  border-radius: 3px;
 }
 
 .slider-button,
@@ -336,7 +368,19 @@ img {
   color: var(--opacity-white);
 }
 
-/* Services-buttons */
+/* Services-buttons, Slider buttons, Contacts-button */
+
+.contacts-button {
+  padding: 15px 44px;
+}
+
+.slider-button {
+  padding: 17px 54px;
+}
+
+.services-button {
+  padding: 15px 40px;
+}
 
 .center-button:hover,
 .center-button:focus {
@@ -529,7 +573,9 @@ img {
 
 .page-footer {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
+  padding: 68px 0 68px 0;
 }
 
