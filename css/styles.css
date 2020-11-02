@@ -172,7 +172,7 @@ img {
 .slider {
   position: relative;
   margin: 0;
-  padding: 71px 0 90px 0;
+  padding: 71px 0 80px 0;
   background-color: var(--light-grey);
 }
 
@@ -191,11 +191,11 @@ img {
   border: none;
   cursor: pointer;
 }
-
+/*
 .index-slide1 {
   background-image: url(../img/nerds-index-slide1.png);
   background-repeat: no-repeat;
-  background-position:93% 18px; /*Картинка улетает :( */
+  background-position:93% 18px;
 }
 
 .index-slide2 {
@@ -207,7 +207,7 @@ img {
   background-image: url(../img/nerds-index-slide3.png);
   background-repeat: no-repeat;
   background-position: right;
-}
+}*/
 
 .slider-title {
   font-size: 55px;
@@ -218,11 +218,12 @@ img {
 
 .slider-list {
   list-style: none;
+  padding: 0;
 }
 
 .slider-description {
   padding: 0;
-  margin: 0 0 54px 0;
+  margin: 0 0 39px 0;
 }
 
 .slider-control button {
@@ -238,13 +239,18 @@ img {
   display: flex;
   width: 88px;
   height: 18px;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 30;
+	bottom: 22%;
+	right: 0;
+  left: 0;
 }
 
 /* Services */
 
 .services {
-  padding: 80px 0 90px 0;
+  padding: 80px 0 80px 0;
 }
 
 .services-list {
@@ -262,7 +268,7 @@ img {
 }
 
 .services-description {
-  margin: 0 0 45px 0;
+  margin: 0 0 32px 0;
 }
 
 /* Features */
@@ -400,25 +406,46 @@ img {
 
 .contacts {
   position: relative;
-  z-index: 5;
-  padding: 0;
-  margin: 0;
+	display: flex;
+  height: 416px;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .contacts-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin: 3px 0 23px 0;
+  padding: 0;
 }
 
 .contacts-wrapper {
   position: absolute;
-  background-color: #fff;
-  width: 350px;
-  padding: 15px 15px;
-  z-index: 7;
-  top: 15%;
-  left: 10%;
+	z-index: 30;
+	top: -8px;
+	right: 0;
+  left: 0;
+}
+
+.contacts-phone {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0 0 37px 0;
+}
+
+.map-contacts {
+	width: 319px;
+	margin-top: 60px;
+	padding: 47px 50px 45px 50px;
+  background-color: var(--white);
+  box-sizing: border-box;
+}
+
+.contacts-adress {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0 0 17px 0;
 }
 
 /* Footer */
@@ -428,7 +455,7 @@ img {
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 .social-button {
@@ -440,7 +467,7 @@ img {
   height: 78px;
   background-color: var(--grey);
   color: inherit;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .social-button:hover,
@@ -459,7 +486,7 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
+  margin: 6px 0 10px 0;
 }
 
 .friend-discont-description {
@@ -479,6 +506,8 @@ img {
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .slider-button,
@@ -510,7 +539,7 @@ img {
 /* Services-buttons, Slider buttons, Contacts-button */
 
 .contacts-button {
-  padding: 15px 44px;
+  padding: 17px 44px 15px 44px;
 }
 
 .slider-button {
@@ -712,7 +741,6 @@ img {
 
 .page-footer {
   display: grid;
-  align-items: center;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
   padding: 68px 0 68px 0;
