@@ -22,6 +22,7 @@
 	--opacity-black: rgba(0, 0, 0, 0.6);
   --opacity-white: rgba(255, 255, 255, 0.3);
   --opacity-grey: rgba(0, 0, 0, 0.2);
+  --boxshadow-color: rgba(0, 1, 1, 0.25);
 }
 
 
@@ -63,6 +64,10 @@ img {
 	list-style: none;
 }
 
+.container{
+	width: 1160px;
+	margin: 0 auto;
+}
 
 /* Grid */
 
@@ -70,7 +75,7 @@ img {
 	height: 100%;
 }
 
-.container {
+.slide {
 	width: 1160px;
 	margin: 0 auto;
 }
@@ -175,11 +180,8 @@ img {
 .slider {
 	position: relative;
 	margin: 0;
-	padding: 71px 0 80px 0;
+	padding: 0;
   background-color: var(--light-grey);
-  background-image: url(../img/nerds-index-slide1.png);
-  background-repeat: no-repeat;
-  background-position: 67% 5px;
 }
 
 .slide {
@@ -187,7 +189,11 @@ img {
 }
 
 .slide-current {
-	display: block;
+  display: block;
+  background-image: url(../img/nerds-index-slide1.png);
+  background-repeat: no-repeat;
+  background-position: 99% 5px;
+  padding: 78px 0px 85px 0;
 }
 
 .slider-control .current-slide {
@@ -388,24 +394,32 @@ img {
 	position: relative;
 }
 
-.work-performe-item::after {
+.work-performed {
+	padding-bottom: 80px;
+}
+
+.work-performe-item img {
+  opacity: 0.2;
+}
+
+.vstick::after {
 	content: "";
 	top: 12px;
 	left: 290px;
 	position: absolute;
 	width: 2px;
 	height: 52px;
-	background-color: var(--light-grey);
+  background-color: var(--light-grey);
 }
 
-.work-performed {
-	padding-bottom: 80px;
+.work-performe-item:hover img,
+.work-performe-item:focus img{
+  opacity: 1;
 }
 
-.work-performe-item:last-child::after {
-	content: none;
+.work-performe-item:active img {
+  opacity: 0.1;
 }
-
 
 /* Contacts */
 
@@ -1075,7 +1089,7 @@ img {
 .pattern-list .pattern-item {
 	position: relative;
 	margin-bottom: 27px;
-	padding-top: 40px;
+  padding-top: 40px;
 }
 
 .pattern-list .pattern-item::before {
@@ -1087,19 +1101,23 @@ img {
 	opacity: 0.12;
 	background-image: url(../img/browser.svg);
 	background-repeat: no-repeat;
-	background-position: 0 0;
+  background-position: 0 0;
 }
 
 .pattern-list .pattern-item:hover::before {
 	opacity: 1;
 }
 
+.pattern-list .pattern-item:hover {
+  box-shadow: 0 6px 15px 0 var(--boxshadow-color);
+}
+
 .pop-up {
 	font-weight: 400;
 	position: absolute;
 	z-index: 1;
-	bottom: 0;
-	width: 361px;
+  bottom: 0;
+	width: 358px;
 	text-align: center;
 	opacity: 0;
 	background-color: var(--light-grey);
