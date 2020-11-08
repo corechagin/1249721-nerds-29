@@ -149,7 +149,10 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Где нас найти</h2>
-        <img src="img/map.png" width="100%" height="416" class="contacts-map" alt="Map">
+        <div class="map-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604839711866!5m2!1sru!2sru" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <img src="img/map.png" width="100%" height="416" class="contacts-map" alt="Map">
+        </div>
         <div class="contacts-wrapper container">
           <div class="map-contacts">
             <p class="contacts-title">Nёrds Design Studio</p>
@@ -198,5 +201,28 @@
         <p class="friend-discont-description">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+
+    <section class="modal">
+      <h2>Напишите нам</h2>
+      <form class="send-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="wrapper-modal">
+          <p class="send-name">
+            <label for="send-name">Ваше имя:</label>
+            <input id="send-name" type="text" name="send-name" placeholder="Имя Фамилия">
+          </p>
+          <p class="send-email">
+            <label for="send-email">Ваш e-mail:</label>
+            <input id="send-email" type="email" name="send-email"
+            placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="send-text">
+          <label for="send-text">Текст письма:</label>
+          <textarea id="send-text" name="send-text" placeholder="В свободной форме" rows="5"></textarea>
+        </p>
+        <button type="submit" class="button send-form-button">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
