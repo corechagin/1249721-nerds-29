@@ -31,7 +31,7 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
         <div class="wrapper container">
           <section class="filter">
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form action="https://echo.htmlacademy.ru" method="GET">
               <p class="filter-description">Стоимость:</p>
               <div class="range-filter">
                 <div class="range-controls">
@@ -254,5 +254,28 @@
       <p class="friend-discont-description">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="send-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="wrapper-modal">
+        <p class="send-name">
+          <label for="send-name">Ваше имя:</label>
+          <input id="send-name" type="text" name="send-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="send-email">
+          <label for="send-email">Ваш e-mail:</label>
+          <input id="send-email" type="email" name="send-email"
+          placeholder="email@example.com">
+        </p>
+      </div>
+      <p class="send-text">
+        <label for="send-text">Текст письма:</label>
+        <textarea id="send-text" name="send-text" placeholder="В свободной форме" rows="5"></textarea>
+      </p>
+      <button type="submit" class="button send-form-button">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 </html>
