@@ -16,7 +16,7 @@
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
           </a>
           <ul class="site-navigation">
-            <li class="site-navigation-item"><a href="#">Студия</a></li>
+            <li class="site-navigation-item invisible-border"><a href="#">Студия</a></li>
             <li class="site-navigation-item"><a href="#">Клиенты</a></li>
             <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
             <li class="site-navigation-item"><a href="#">Контакты</a></li>
@@ -28,23 +28,23 @@
 
     <main class="center">
       <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
-      <section class="slider index-slide1">
+      <section class="slider">
         <ul class="slider-list container">
-          <li class="slider-item slide slide-current">
+          <li class="slider-item-1 slide current-slide">
             <h2 class="slider-title">Долго, дорого, <br>
               скрупулезно.</h2>
             <p class="slider-description">Математически выверенный дизайн <br>
               для вашего сайта или мобильного приложения.</p>
             <a class="button slider-button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item slide">
+          <li class="slider-item-2 slide">
             <h2 class="slider-title">Любим математику <br>
               как никто другой</h2>
             <p class="slider-description">Никакого креатива, только математические формулы <br>
               для расчета идеальных пропорций</p>
             <a class="button slider-button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item slide">
+          <li class="slider-item-3 slide">
             <h2 class="slider-title">Только ночь, <br>
               только хардкор</h2>
             <p class="slider-description">Работать днем, как все? Мы против этого. <br>
@@ -53,9 +53,9 @@
           </li>
         </ul>
         <div class="slider-control container">
-          <button class="current-slide" type="button" aria-label="Первый слайд"></button>
-          <button type="button" aria-label="Второй слайд"></button>
-          <button type="button" aria-label="Третий слайд"></button>
+          <button class="slider-radio-1  current-radio" type="button" aria-label="Первый слайд"></button>
+          <button class="slider-radio-2" type="button" aria-label="Второй слайд"></button>
+          <button class="slider-radio-3" type="button" aria-label="Третий слайд"></button>
         </div>
       </section>
 
@@ -202,17 +202,17 @@
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal modal-popup">
       <h2>Напишите нам</h2>
       <form class="send-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="wrapper-modal">
           <p class="send-name">
             <label for="send-name">Ваше имя:</label>
-            <input id="send-name" type="text" name="send-name" placeholder="Имя Фамилия">
+            <input class="send-name-input" id="send-name" type="text" name="send-name" placeholder="Имя Фамилия">
           </p>
           <p class="send-email">
             <label for="send-email">Ваш e-mail:</label>
-            <input id="send-email" type="email" name="send-email"
+            <input class="send-email-input" id="send-email" type="email" name="send-email"
             placeholder="email@example.com">
           </p>
         </div>
@@ -224,5 +224,7 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <script src="js/js-modal.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

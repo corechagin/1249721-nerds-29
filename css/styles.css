@@ -80,6 +80,7 @@ img {
 .slide {
   width: 1160px;
   margin: 0 auto;
+  display: none;
 }
 
 .page-body {
@@ -107,6 +108,7 @@ img {
 .main-navigation {
   display: grid;
   grid-template-columns: 170px 1fr min-content;
+  position: relative;
 }
 
 .main-navigation a {
@@ -114,6 +116,7 @@ img {
   color: var(--black);
   font-size: 16px;
   line-height: 30px;
+  padding-bottom: 12px;
 }
 
 .main-header {
@@ -133,11 +136,16 @@ img {
 }
 
 .site-navigation {
+  display: inline-block;
   padding: 11px 51px 0 0;
 }
 
+.current-position a {
+  border-bottom: 2px solid var(--light-red);
+}
+
 .basket {
-  padding: 11px 0 0 0;
+  padding: 9px 0 0 0;
 }
 
 .site-navigation,
@@ -154,7 +162,7 @@ img {
   width: 15px;
   height: 15px;
   right: 100px;
-  bottom: 24px;
+  bottom: 38px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -171,11 +179,28 @@ img {
   color: var(--light-red);
 }
 
-.site-navigation a:active,
+.site-navigation a:active {
+  color: var(--opacity-light-black);
+  border-bottom: 2px solid var(--light-red);
+}
+
 .basket:active {
   color: var(--opacity-light-black);
 }
 
+.basket:active::after {
+  content: "";
+  top: 66px;
+  left: -37px;
+  position: absolute;
+  width: 112px;
+  height: 2px;
+  background-color: var(--light-red);
+}
+
+.invisible-border a {
+  border-bottom: 2px solid var(--light-grey);
+}
 
 /* Slider */
 
@@ -186,19 +211,31 @@ img {
   background-color: var(--light-grey);
 }
 
-.slide {
-  display: none;
-}
-
-.slide-current {
+.current-slide {
   display: block;
   background-image: url(../img/nerds-index-slide1.png);
   background-repeat: no-repeat;
-  background-position: 99% -7px;
-  padding: 72px 0px 79px 0;
+  background-position: 99% -20px;
+  padding: 59px 0px 79px 0;
 }
 
-.slider-control .current-slide {
+.bg-img-second {
+  display: block;
+  background-image: url(../img/nerds-index-slide2.png);
+  background-repeat: no-repeat;
+  background-position: 99% -20px;
+  padding: 59px 0px 79px 0;
+}
+
+.bg-img-third {
+  display: block;
+  background-image: url(../img/nerds-index-slide3.png);
+  background-repeat: no-repeat;
+  background-position: 99% -20px;
+  padding: 59px 0px 79px 0
+}
+
+.slider-control .current-radio {
   padding: 10px;
   background-image: url(../img/slider-on.png);
   background-repeat: no-repeat;
@@ -206,23 +243,6 @@ img {
   cursor: pointer;
 }
 
-/*
-.index-slide1 {
-  background-image: url(../img/nerds-index-slide1.png);
-  background-repeat: no-repeat;
-  background-position:93% 18px;
-}
-
-.index-slide2 {
-  background-image: url(../img/nerds-index-slide2.png);
-  background-repeat: no-repeat;
-}
-
-.index-slide3 {
-  background-image: url(../img/nerds-index-slide3.png);
-  background-repeat: no-repeat;
-  background-position: right;
-}*/
 
 .slider-title {
   font-size: 55px;
@@ -258,7 +278,7 @@ img {
   justify-content: space-between;
   position: absolute;
   z-index: 30;
-  bottom: 22%;
+  bottom: 23%;
   right: 0;
   left: 0;
 }
@@ -695,7 +715,7 @@ img {
   line-height: 55px;
   background-color: var(--light-grey);
   text-align: center;
-  padding: 70px 0 108px 0;
+  padding: 56px 0 108px 0;
   margin: 0;
 }
 
@@ -817,6 +837,7 @@ img {
 .current-position a:active {
   color: var(--black);
 }
+
 
 .pattern-filter-item a {
   color: var(--opacity-light-black);
@@ -1048,6 +1069,10 @@ img {
   opacity: 1;
 }
 
+.radio-input:focus+.radio-box {
+	outline: 1px solid var(--black);
+}
+
 .option {
   display: block;
 }
@@ -1099,6 +1124,10 @@ img {
 .check-input:checked+.check-box:hover,
 .check-input:checked+.check-box:focus {
   opacity: 1;
+}
+
+.check-input:focus+.check-box {
+  outline: 1px solid var(--black);
 }
 
 .filter-button {
@@ -1228,6 +1257,15 @@ img {
   display: none;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .wrapper-modal {
   display: flex;
   justify-content: space-between;
@@ -1312,3 +1350,44 @@ img {
   opacity: .1;
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
