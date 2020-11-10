@@ -1021,15 +1021,12 @@ img {
   padding: 10px;
   margin-left: 10px;
   text-align: center;
+  justify-content: center;
   border: none;
   border-radius: 5px;
   background: var(--light-grey);
   font-family: inherit;
   font-size: inherit;
-}
-
-.max-price {
-  text-align: right;
 }
 
 /* Radio button */
@@ -1246,8 +1243,8 @@ img {
   top: 120px;
   left: 50%;
   box-sizing: border-box;
-  width: 930px;
-  transform: translateX(-50%);
+  width: 960px;
+  margin-left: -480px;
   padding-top: 68px;
   padding-right: 90px;
   padding-bottom: 83px;
@@ -1314,7 +1311,7 @@ img {
 
 .send-form textarea {
   box-sizing: border-box;
-  width: 760px;
+  width: 762px;
   padding: 11px 0 13px 15px;
 }
 
@@ -1330,7 +1327,7 @@ img {
   font-size: 0;
   position: absolute;
   top: 79px;
-  right: 65px;
+  right: 92px;
   width: 21px;
   height: 21px;
   cursor: pointer;
