@@ -43,10 +43,10 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
-                    от <input type="number" name="min-price" value="0">
+                    от <input type="text" name="min-price" value="0">
                   </label>
                   <label class="max-price">
-                    до <input type="number" name="max-price" value="15000">
+                    до <input type="text" name="max-price" value="15000">
                   </label>
                 </div>
               </div>
@@ -128,8 +128,8 @@
                 <li class="pattern-filter-item current"><a>По цене</a></li>
                 <li class="pattern-filter-item"><a href="#">По типу</a></li>
                 <li class="pattern-filter-item"><a href="#">По названию</a></li>
-                <li class="current"><a class="sort-down"></a></li>
-                <li><a class="sort-up" href="#"></a></li>
+                <li class="current"><a class="sort-down" title="Сортировка по убыванию"></a></li>
+                <li><a class="sort-up" title="Сортировка по возрастанию" href="#"></a></li>
               </ul>
             </div>
             <ul class="pattern-list">
@@ -187,34 +187,34 @@
                 <a class="pagination-link-current">1</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
+                <a class="pagination-link" title="Переход на 2-ую страницу" href="#">2</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
+                <a class="pagination-link" title="Переход на 3-ю страницу" href="#">3</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link next-page" href="#">Следующая</a>
+                <a class="pagination-link next-page" title="Переход на следующую страницу" href="#">Следующая</a>
               </li>
             </ul>
           </section>
         </div>
 
-    <section class="contacts">
-      <h2 class="visually-hidden">Где нас найти</h2>
-      <div class="map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604839711866!5m2!1sru!2sru" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <img src="img/map.png" width="100%" height="416" class="contacts-map" alt="Map">
-      </div>
-      <div class="contacts-wrapper container">
-        <div class="map-contacts">
-          <p class="contacts-title">Nёrds Design Studio</p>
-          <p class="contacts-adress">191186, Санкт-Петербург, <br>
-           ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contacts-phone">тел.<a class="contacts-phone" href="tel:+7812757575">&nbsp;+7 (812) 275-75-75</a></p>
-          <button type="button" class="button contacts-button">Напишите нам</button>
-        </div>
-      </div>
-    </section>
+        <section class="contacts">
+          <h2 class="visually-hidden">Где нас найти</h2>
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604839711866!5m2!1sru!2sru" width="1440" height="416"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <img src="img/map.png" width="1440" height="416" class="contacts-map" alt="Map">
+          </div>
+          <div class="contacts-wrapper container">
+            <div class="map-contacts">
+              <p class="contacts-title">Nёrds Design Studio</p>
+              <p class="contacts-adress">191186, Санкт-Петербург, <br>
+               ул. Б. Конюшенная, д. 19/8</p>
+              <p class="contacts-phone">тел.<a class="contacts-phone" href="tel:+7812757575">&nbsp;+7 (812) 275-75-75</a></p>
+              <button type="button" class="button contacts-button">Напишите нам</button>
+            </div>
+          </div>
+        </section>
     </main>
 
   <footer class="page-footer container">
@@ -254,17 +254,17 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <section class="modal modal-popup">
     <h2>Напишите нам</h2>
     <form class="send-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="wrapper-modal">
         <p class="send-name">
           <label for="send-name">Ваше имя:</label>
-          <input id="send-name" type="text" name="send-name" placeholder="Имя Фамилия">
+          <input class="send-name-input" id="send-name" type="text" name="send-name" placeholder="Имя Фамилия">
         </p>
         <p class="send-email">
           <label for="send-email">Ваш e-mail:</label>
-          <input id="send-email" type="email" name="send-email"
+          <input class="send-email-input" id="send-email" type="email" name="send-email"
           placeholder="email@example.com">
         </p>
       </div>

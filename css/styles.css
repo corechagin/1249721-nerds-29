@@ -137,6 +137,7 @@ img {
 
 .site-navigation {
   display: inline-block;
+  vertical-align: middle;
   padding: 11px 51px 0 0;
 }
 
@@ -622,10 +623,10 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   font: inherit;
   text-align: center;
   color: var(--white);
-  vertical-align: middle;
   text-transform: uppercase;
   border: none;
   border-radius: 3px;
@@ -860,6 +861,7 @@ img {
 
 .pagination-link-current {
   display: inline-block;
+  vertical-align: middle;
   border: 3px solid var(--dark-grey);
   border-radius: 3px;
   box-sizing: border-box;
@@ -872,6 +874,7 @@ img {
 
 .pagination-link {
   display: inline-block;
+  vertical-align: middle;
   color: var(--black);
   background-color: var(--light-grey);
   padding: 14px 18px 11px 17px;
@@ -1240,11 +1243,11 @@ img {
 .modal {
   position: fixed;
   z-index: 50;
-  top: 120px;
+  top: 50%;
   left: 50%;
   box-sizing: border-box;
+  transform: translate(-50%,-50%);
   width: 960px;
-  margin-left: -480px;
   padding-top: 68px;
   padding-right: 90px;
   padding-bottom: 83px;
@@ -1351,26 +1354,27 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    top: -200%
   }
 
   70% {
-    transform: translateY(30px);
+    top: 100%;
   }
 
   90% {
-    transform: translateY(-10px);
+
+    top: 50%;
   }
 
   100% {
-    transform: translateY(0);
+    top: -10%;
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    left: 45%;
   }
 
   10%,
@@ -1378,13 +1382,13 @@ img {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    right: 52%;
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    left: 51%;
   }
 }
